@@ -38,11 +38,11 @@ for turn in range(turns):
             print("Invalid input. Enter coordinates as two numbers separated by space.")
 
     if is_ship_hit(x, y, computer_ships):
-        print("Congratulations! You've hit a computer's ship!")
+        print("Congratulations, You have hit a computer's ship!")
         board[x][y] = "X"
         computer_ships.remove((x, y))
     else:
-        print("Oops! You missed!")
+        print("You missed!")
 
     # Check if the player has won
     if not computer_ships:
